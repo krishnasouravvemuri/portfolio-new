@@ -5,7 +5,7 @@ import { PROJECTS } from '../data.js'
 
 function Thumb({ src }) {
   return (
-    <div className="relative aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-accent/10 to-accent2/10 border border-white/5 group/thumb">
+    <div className="relative aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-accent/10 to-accent2/10 border border-[var(--border)] group/thumb">
       <img
         src={src}
         alt=""
@@ -106,7 +106,7 @@ export default function Projects() {
 
                 <div className="flex flex-wrap gap-2 pt-2">
                   {p.stack.map((s) => (
-                    <span key={s} className="font-mono text-[11px] px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
+                    <span key={s} className="font-mono text-[11px] px-3 py-1.5 rounded-lg bg-[var(--fg)]/5 border border-[var(--border)]">
                       {s}
                     </span>
                   ))}
@@ -114,7 +114,7 @@ export default function Projects() {
 
                 <div className="flex gap-3 pt-2">
                   {p.code && (
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl glass group-hover/project:bg-white/10 transition text-sm">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl glass group-hover/project:bg-[var(--fg)]/10 transition text-sm">
                       <Github size={16} /> View Code <ArrowUpRight size={14} className="group-hover/project:-translate-y-0.5 group-hover/project:translate-x-0.5 transition" />
                     </span>
                   )}

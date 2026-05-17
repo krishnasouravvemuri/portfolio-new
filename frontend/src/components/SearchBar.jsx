@@ -108,11 +108,11 @@ export default function SearchBar() {
     <>
       <button
         onClick={() => { setOpen(true); setTimeout(() => inputRef.current?.focus(), 50) }}
-        className="inline-flex items-center gap-2 px-3 py-2 rounded-xl glass hover:bg-white/10 transition text-xs text-muted"
+        className="inline-flex items-center gap-2 px-3 py-2 rounded-xl glass hover:bg-[var(--fg)]/10 transition text-xs text-muted"
       >
         <Search size={14} />
         <span className="hidden sm:inline">Search</span>
-        <kbd className="hidden md:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/10">⌘K</kbd>
+        <kbd className="hidden md:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--fg)]/10">⌘K</kbd>
       </button>
 
       <AnimatePresence>
@@ -148,9 +148,9 @@ export default function SearchBar() {
                     {matches.length ? `${idx + 1}/${matches.length}` : '0'}
                   </span>
                 )}
-                <button onClick={() => go(-1)} disabled={!matches.length} className="p-1.5 rounded-lg hover:bg-white/10 disabled:opacity-30"><ArrowUp size={14} /></button>
-                <button onClick={() => go(1)} disabled={!matches.length} className="p-1.5 rounded-lg hover:bg-white/10 disabled:opacity-30"><ArrowDown size={14} /></button>
-                <button onClick={close} className="p-1.5 rounded-lg hover:bg-white/10"><X size={14} /></button>
+                <button onClick={() => go(-1)} disabled={!matches.length} className="p-1.5 rounded-lg hover:bg-[var(--fg)]/10 disabled:opacity-30"><ArrowUp size={14} /></button>
+                <button onClick={() => go(1)} disabled={!matches.length} className="p-1.5 rounded-lg hover:bg-[var(--fg)]/10 disabled:opacity-30"><ArrowDown size={14} /></button>
+                <button onClick={close} className="p-1.5 rounded-lg hover:bg-[var(--fg)]/10"><X size={14} /></button>
               </div>
               <p className="text-[11px] font-mono text-muted mt-2 px-1">
                 Enter ↵ next · Shift+Enter prev · Esc close

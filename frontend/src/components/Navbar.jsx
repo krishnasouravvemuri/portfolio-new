@@ -22,23 +22,23 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/10"
+      className="fixed top-0 left-0 right-0 z-50 bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--border)]"
     >
       <div className="w-full px-6 py-3 flex items-center justify-between gap-4">
-        <Link to="/" className="font-bold tracking-tight text-lg shrink-0 text-white">
+        <Link to="/" className="font-bold tracking-tight text-lg shrink-0 text-[var(--fg)]">
           {'<'}Sourav/{'>'}
         </Link>
 
         <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
           {links.map((l, i) =>
             l.hash ? (
-              <a key={l.to + i} href={l.to} className="px-3 py-2 text-sm text-zinc-400 hover:text-white transition">{l.label}</a>
+              <a key={l.to + i} href={l.to} className="px-3 py-2 text-sm text-[var(--muted)] hover:text-[var(--fg)] transition">{l.label}</a>
             ) : (
               <NavLink
                 key={l.to + i}
                 to={l.to}
                 className={({ isActive }) =>
-                  `px-3 py-2 text-sm transition ${isActive && loc.pathname === l.to ? 'text-white' : 'text-zinc-400 hover:text-white'}`
+                  `px-3 py-2 text-sm transition ${isActive && loc.pathname === l.to ? 'text-[var(--fg)]' : 'text-[var(--muted)] hover:text-[var(--fg)]'}`
                 }
               >
                 {l.label}

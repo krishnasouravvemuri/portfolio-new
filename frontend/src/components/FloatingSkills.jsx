@@ -3,21 +3,22 @@ import { motion } from 'framer-motion'
 import { SKILL_ICONS } from '../data.js'
 import Terminal from './Terminal.jsx'
 
-function IconArt({ s, size = 44 }) {
+function IconArt({ s, size }) {
+  const sz = size || (typeof window !== 'undefined' && window.innerWidth < 640 ? 36 : 48)
   if (!s) return null
-  if (s.emoji && !s.icon) return <span style={{ fontSize: size }}>{s.emoji}</span>
+  if (s.emoji && !s.icon) return <span style={{ fontSize: sz }}>{s.emoji}</span>
   return (
     <img
       src={s.icon}
       alt={s.name}
       loading="lazy"
-      style={{ width: size, height: size }}
+      style={{ width: sz, height: sz }}
       className={`object-contain ${s.invert ? 'invert-on-dark' : ''}`}
       onError={(e) => {
         if (s.emoji) {
           const span = document.createElement('span')
           span.textContent = s.emoji
-          span.style.fontSize = `${size}px`
+          span.style.fontSize = `${sz}px`
           e.currentTarget.replaceWith(span)
         } else {
           e.currentTarget.style.opacity = 0.3
@@ -45,9 +46,9 @@ export default function FloatingSkills() {
       <section id="about" className="relative py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12">
-            <p className="font-mono text-xs text-zinc-500 mb-2">// skills</p>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Tech I work with</h2>
-            <p className="text-zinc-400 mt-3 max-w-xl">
+            <p className="font-mono text-xs text-[var(--muted)] mb-2">// skills</p>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--fg)]">Tech I work with</h2>
+            <p className="text-[var(--muted)] mt-3 max-w-xl">
               Languages, frameworks, AI, and cloud tools I use day to day.
             </p>
           </div>
@@ -74,9 +75,9 @@ export default function FloatingSkills() {
                   className="flex items-center justify-center"
                   style={{ filter: `drop-shadow(0 8px 24px ${s.color}99)` }}
                 >
-                  <IconArt s={s} size={48} />
+                  <IconArt s={s} />
                 </motion.div>
-                <p className="text-[11px] mt-3 font-mono text-zinc-500 group-hover:text-white transition text-center">
+                <p className="text-[11px] mt-3 font-mono text-[var(--muted)] group-hover:text-[var(--fg)] transition text-center">
                   {s.name}
                 </p>
               </motion.div>
@@ -87,9 +88,9 @@ export default function FloatingSkills() {
 
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="mb-6">
-          <p className="font-mono text-xs text-zinc-500 mb-2">// terminal</p>
-          <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Try the CLI</h3>
-          <p className="text-zinc-400 mt-2 max-w-xl text-sm">
+          <p className="font-mono text-xs text-[var(--muted)] mb-2">// terminal</p>
+          <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--fg)]">Try the CLI</h3>
+          <p className="text-[var(--muted)] mt-2 max-w-xl text-sm">
             Type <span className="font-mono">help</span> to list commands.
           </p>
         </div>

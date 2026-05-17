@@ -12,7 +12,7 @@ function CopyChip({ text }) {
         setCopied(true)
         setTimeout(() => setCopied(false), 1500)
       }}
-      className="ml-2 p-1.5 rounded-md bg-white/5 hover:bg-accent/20 transition"
+      className="ml-2 p-1.5 rounded-md bg-[var(--fg)]/5 hover:bg-accent/20 transition"
       aria-label="copy"
     >
       {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
@@ -58,7 +58,7 @@ export default function Contact() {
             className="space-y-4"
           >
             {EMAILS.map((e) => (
-              <div key={e} className="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-white/5 transition">
+              <div key={e} className="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-[var(--fg)]/5 transition">
                 <div className="w-11 h-11 rounded-xl bg-accent/20 flex items-center justify-center">
                   <Mail size={20} className="text-accent2" />
                 </div>
@@ -95,7 +95,7 @@ export default function Contact() {
               href={LINKEDIN_URL}
               target="_blank"
               rel="noreferrer"
-              className="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-white/5 transition group"
+              className="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-[var(--fg)]/5 transition group"
             >
               <div className="w-11 h-11 rounded-xl bg-accent/20 flex items-center justify-center">
                 <Linkedin size={20} className="text-accent2" />
@@ -121,7 +121,7 @@ export default function Contact() {
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full mt-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-accent focus:outline-none transition"
+                className="w-full mt-1 px-4 py-3 rounded-xl bg-[var(--fg)]/5 border border-[var(--border)] focus:border-accent focus:outline-none transition"
                 placeholder="Your name"
               />
             </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                 type="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full mt-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-accent focus:outline-none transition"
+                className="w-full mt-1 px-4 py-3 rounded-xl bg-[var(--fg)]/5 border border-[var(--border)] focus:border-accent focus:outline-none transition"
                 placeholder="you@example.com"
               />
             </div>
@@ -143,7 +143,7 @@ export default function Contact() {
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full mt-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-accent focus:outline-none transition resize-none"
+                className="w-full mt-1 px-4 py-3 rounded-xl bg-[var(--fg)]/5 border border-[var(--border)] focus:border-accent focus:outline-none transition resize-none"
                 placeholder="Tell me about the role / project..."
               />
             </div>

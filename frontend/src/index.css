@@ -139,13 +139,13 @@ html, body {
   mix-blend-mode: difference;
 }
 .cursor-ring {
-  width: 22px; height: 22px;
+  width: 27px; height: 27px;
   border: none;
   background: #fff;
   z-index: 9999;
 }
 .cursor-dot {
-  width: 6px; height: 6px;
+  width: 5px; height: 5px;
   background: #fff;
   z-index: 10000;
   transition: width 0.1s ease, height 0.1s ease, background 0.1s ease;
