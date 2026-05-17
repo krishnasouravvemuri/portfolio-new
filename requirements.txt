@@ -1,0 +1,4 @@
+# Misc Python deps (utility scripts, future backend)
+# Frontend uses Node/Vite — see frontend/package.json
+requests==2.32.3
+python-dotenv==1.0.1
