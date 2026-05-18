@@ -98,8 +98,48 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: 'easeOut' }}
           className="relative mx-auto"
         >
+          {/* looping dotted arrow + label */}
+          <div className="hidden md:block absolute right-full top-1/2 -translate-y-1/2 mr-2 lg:mr-4 pointer-events-none select-none">
+            <div className="relative flex items-end gap-2">
+              <span
+                className="text-base lg:text-lg whitespace-nowrap text-[var(--fg)]/85"
+                style={{
+                  fontFamily: '"Caveat","Kalam",cursive',
+                  fontWeight: 600,
+                  transform: 'translate(61px, 16px) rotate(-3deg)',
+                }}
+              >
+                yeap! that's me
+              </span>
+              <svg
+                width="200"
+                height="120"
+                viewBox="0 0 200 120"
+                fill="none"
+                aria-hidden="true"
+                className="text-[var(--fg)]/85"
+              >
+                <path
+                  d="M15 95 C 5 30, 75 5, 108 38 C 140 62, 122 92, 92 80 C 68 70, 82 45, 118 55 C 148 62, 172 65, 192 65"
+                  stroke="currentColor"
+                  strokeWidth="2.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+                <path
+                  d="M180 56 L 194 65 L 180 74"
+                  stroke="currentColor"
+                  strokeWidth="2.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
           <div className="relative float">
-            <div className="w-56 h-64 sm:w-72 sm:h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--bg-elev)] flex items-center justify-center relative">
+            <div className="w-[10.5rem] h-48 sm:w-[13.5rem] sm:h-60 md:w-60 md:h-72 rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--bg-elev)] flex items-center justify-center relative">
               <img
                 src="/profile.jpg"
                 alt="Sourav"
