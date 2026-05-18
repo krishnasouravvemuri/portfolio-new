@@ -20,7 +20,7 @@ export const SKILLS = {
   Languages: ['Python', 'Java', 'SQL'],
   'Frameworks / Libraries': ['Django', 'DRF', 'PyTorch', 'Scikit-learn', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn'],
   'Cloud / DevOps': ['AWS', 'Docker', 'Kubernetes'],
-  Tools: ['Git', 'GitHub', 'Postman', 'VS Code', 'PyCharm', 'MySQL']
+  Tools: ['Git', 'GitHub', 'Postman', 'MySQL']
 }
 
 // floating skill icons (devicon CDN)
@@ -39,8 +39,6 @@ export const SKILL_ICONS = [
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', color: '#F05032' },
   { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', color: '#ffffff', invert: true },
   { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg', color: '#FF6C37' },
-  { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg', color: '#007ACC' },
-  { name: 'PyCharm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg', color: '#21D789' },
   { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', color: '#FCC624' },
   { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg', color: '#CC2927' },
   { name: 'LangChain', icon: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4', color: '#1C3C3C' },
@@ -143,28 +141,28 @@ export const CERTS = [
   {
     name: 'AWS Certified Solutions Architect – Associate',
     issuer: 'Amazon Web Services',
-    url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/',
+    url: 'https://drive.google.com/file/d/1c89HMrAgktvAhU7ItLzVLNitCDvwen5L/view?usp=drivesdk',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
     color: 'from-orange-500 to-amber-500'
   },
   {
     name: 'PCEP – Python Entry-Level Programmer',
     issuer: 'Python Institute',
-    url: 'https://pythoninstitute.org/pcep',
+    url: 'https://drive.google.com/file/d/1uYoUXC2rc17CRrgNasVvTjRSQ84wgYAb/view?usp=drivesdk',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     color: 'from-blue-500 to-yellow-400'
   },
   {
     name: 'Oracle GenAI Foundations',
     issuer: 'Oracle University',
-    url: 'https://education.oracle.com/oracle-cloud-infrastructure-2024-generative-ai-professional/pexam_1Z0-1127-24',
+    url: 'https://drive.google.com/file/d/1khQ2_kVFJlI1p4-koc4aV1242mYDFegR/view?usp=drivesdk',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
     color: 'from-red-600 to-rose-500'
   },
   {
     name: 'Postman API Fundamentals',
     issuer: 'Postman',
-    url: 'https://academy.postman.com/path/api-fundamentals-student-expert',
+    url: 'https://drive.google.com/file/d/1OunxPDIL3IMoU_wkJbAsq96R-8IlwVZB/view?usp=drivesdk',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
     color: 'from-orange-600 to-pink-500'
   }

@@ -10,6 +10,12 @@ export default function Journey() {
       <p className="text-muted mb-10 max-w-2xl">
         From classroom to codebase — every step that shaped the path here.
       </p>
+      <p className="mb-10 max-w-2xl italic font-semibold text-base md:text-lg">
+        <span className="bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent">
+          Not the nine pointer you are looking for
+        </span>{' '}
+        <span className="not-italic">😜</span>
+      </p>
 
       <div className="relative">
         {/* connector line */}
