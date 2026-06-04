@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="gs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="gs-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#gs-bg)"/>
+  <rect x="40" y="40" width="720" height="420" rx="18" fill="url(#gs-card)" opacity="0.95"/>
+  <!-- header -->
+  <rect x="60" y="60" width="260" height="14" rx="7" fill="#7c3aed"/>
+  <rect x="60" y="86" width="360" height="10" rx="5" fill="#8b8b9a" opacity="0.7"/>
+  <!-- repo url input -->
+  <rect x="60" y="120" width="500" height="40" rx="20" fill="#1f1f33" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="80" y="146" font-family="monospace" font-size="14" fill="#8b8b9a">github.com/user/repo</text>
+  <rect x="580" y="120" width="160" height="40" rx="10" fill="#7c3aed"/>
+  <text x="660" y="146" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="600">Index</text>
+  <!-- chat bubbles -->
+  <g font-family="sans-serif">
+    <rect x="60" y="195" width="440" height="46" rx="12" fill="#161628" stroke="#2a2a44"/>
+    <text x="80" y="223" font-size="14" fill="#e5e5ef">Q: What does auth/middleware.py do?</text>
+    <rect x="300" y="255" width="440" height="64" rx="12" fill="#7c3aed" opacity="0.18" stroke="#7c3aed" stroke-width="1"/>
+    <text x="320" y="282" font-size="13" fill="#e5e5ef">A: Validates JWT tokens on each request</text>
+    <text x="320" y="302" font-size="13" fill="#8b8b9a">and attaches the user to ctx. (3 sources)</text>
+  </g>
+  <!-- stats footer -->
+  <g font-family="monospace" fill="#8b8b9a" font-size="11">
+    <text x="60" y="380">CHUNKS</text>
+    <text x="60" y="402" font-size="22" font-weight="700" fill="#06b6d4">1,000+</text>
+  </g>
+  <g font-family="monospace" fill="#8b8b9a" font-size="11">
+    <text x="260" y="380">ANSWER</text>
+    <text x="260" y="402" font-size="22" font-weight="700" fill="#7c3aed">&lt; 5s</text>
+  </g>
+  <g font-family="monospace" fill="#8b8b9a" font-size="11">
+    <text x="460" y="380">CLICKS</text>
+    <text x="460" y="402" font-size="22" font-weight="700" fill="#ec4899">2</text>
+  </g>
+  <text x="740" y="440" text-anchor="end" font-family="monospace" font-size="12" fill="#7c3aed" opacity="0.7">Git Repo Summarizer · LangChain + RAG</text>
+</svg>

@@ -2,7 +2,6 @@ export const RESUME_URL = 'https://drive.google.com/file/d/11MdKUfwEqXbwGnLdU9z0
 export const LINKEDIN_URL = 'https://linkedin.com/in/sri-venkata-krishna-sourav-v'
 export const GITHUB_URL = 'https://github.com/krishnavitap'
 export const PAPERREPO_URL = 'https://github.com/krishnavitap/PaperRepo'
-export const EVENTIFY_URL = 'https://github.com/krishnavitap/Eventify'
 export const EMAILS = ['krishnavitap@gmail.com', 'sourav230505@gmail.com']
 export const PHONE = '+91 9063183455'
 export const LOCATION = 'Vijayawada, India'
@@ -60,7 +59,7 @@ export const EXPERTISE = {
   },
   Django: {
     level: 'Advanced · 3 yrs',
-    blurb: 'Production REST APIs with DRF, ORM-heavy data models, auth & permissions, caching, and deployment. Powers both PaperRepo and Eventify.',
+    blurb: 'Production REST APIs with DRF, ORM-heavy data models, auth & permissions, caching, and deployment. Powers PaperRepo and OCR backend services.',
     tags: ['DRF', 'ORM', 'Auth', 'Caching']
   },
   Git: {
@@ -96,15 +95,75 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    name: 'Git Repo Summarizer',
+    subtitle: 'RAG-based Code Q&A',
+    description:
+      'Full-stack app that reads an entire code repository and answers questions about it in plain language. Repo files are chunked, embedded, and stored in a vector database; top matches are passed to an LLM for grounded answers.',
+    stack: ['Python', 'LangChain', 'LLMs', 'Vector Database', 'React'],
+    bullets: [
+      'Splits repo files into 1,000+ text chunks stored in a vector DB for fast, relevant search.',
+      'Pulls top matching code pieces into an LLM, cutting answer time to under 5s per question.',
+      'Simple React UI — paste a repo link and start asking questions in 2 clicks.'
+    ],
+    thumbnails: [
+      '/projects/gitsummarizer-1.svg',
+      '/projects/gitsummarizer-2.svg',
+      '/projects/gitsummarizer-3.svg'
+    ],
+    code: 'https://github.com/krishnavitap',
+    live: null,
+    accent: 'from-violet-500 to-fuchsia-500'
+  },
+  {
+    name: 'Speech Emotion Recognition',
+    subtitle: 'Deep Learning',
+    description:
+      'Deep learning model that reads human emotion from speech. Audio clips are converted to mel-spectrogram images and classified by a CNN into 7 emotion types.',
+    stack: ['Python', 'PyTorch', 'Librosa', 'CNN', 'Mel-Spectrograms'],
+    bullets: [
+      'Trained on a labelled audio dataset of 1,400+ clips.',
+      'Each clip turned into a mel-spectrogram image fed to the model.',
+      'CNN sorts speech into 7 emotion types; ~80% test accuracy after tuning & balancing.'
+    ],
+    thumbnails: [
+      '/projects/ser-1.svg',
+      '/projects/ser-2.svg',
+      '/projects/ser-3.svg'
+    ],
+    code: 'https://github.com/krishnavitap',
+    live: null,
+    accent: 'from-cyan-500 to-emerald-500'
+  },
+  {
+    name: 'Chocolate Exports Analytics',
+    subtitle: 'Power BI Dashboards',
+    description:
+      'Power BI analytics on a chocolate-exports dataset. Cleaned raw data and built interactive dashboards for sales, top markets, and export trends, filterable by country, year, and product.',
+    stack: ['Power BI', 'Data Cleaning', 'Data Visualization'],
+    bullets: [
+      'Cleaned a raw dataset of 1,000+ rows, fixing missing values and wrong entries.',
+      'Built 3 dashboards: sales, top markets, export trends over time.',
+      'Linked charts and filters for one-click views by country, year, and product.'
+    ],
+    thumbnails: [
+      '/projects/chocolate-1.svg',
+      '/projects/chocolate-2.svg',
+      '/projects/chocolate-3.svg'
+    ],
+    code: 'https://github.com/krishnavitap',
+    live: null,
+    accent: 'from-amber-500 to-orange-500'
+  },
+  {
     name: 'PaperRepo',
     subtitle: 'Academic Paper Repository',
     description:
-      'Full-stack platform for students and researchers to upload, search, and download academic papers. Built with Django + SQLite3, styled with Tailwind. Search/filter, tagging, and a performance-tuned dashboard.',
-    stack: ['Django', 'SQLite3', 'Tailwind CSS', 'Python'],
+      'Full-stack site where students upload, read, and download question papers, important questions, and study notes. Cookie-based JWT auth secures each user across 10+ API routes; material is organized by subject and semester.',
+    stack: ['Django REST Framework', 'React', 'Supabase', 'JWT Auth'],
     bullets: [
-      '1,000+ students & researchers; 500+ papers uploaded.',
-      '2,000+ downloads, 1,500+ active users via search/filter.',
-      'Page load 1.5s → <1s for 50+ concurrent users.'
+      'Cookie-based JWT login/signup securing user access and uploads across 10+ API routes.',
+      'Search and filters by subject and semester — find the right paper in under 3 clicks.',
+      'Study material grouped by subject and semester; 100+ files easy to browse.'
     ],
     thumbnails: [
       '/projects/paperrepo-1.svg',
@@ -113,27 +172,7 @@ export const PROJECTS = [
     ],
     code: 'https://github.com/krishnavitap/PaperRepo',
     live: null,
-    accent: 'from-violet-500 to-fuchsia-500'
-  },
-  {
-    name: 'Eventify',
-    subtitle: 'Event Management Platform',
-    description:
-      'Event management with authentication, role-based access, and dynamic listings. Deployed to AWS EC2 with sub-800ms dashboards. Students create, register, and manage events at scale.',
-    stack: ['Django', 'SQLite3', 'Tailwind CSS', 'AWS EC2'],
-    bullets: [
-      'Auth + role-based access for event creation, registration, management.',
-      'Dynamic listings with filter/search; 20+ events, 200+ registrations.',
-      'Dashboard < 800ms. Deployed on AWS EC2.'
-    ],
-    thumbnails: [
-      '/projects/eventify-1.svg',
-      '/projects/eventify-2.svg',
-      '/projects/eventify-3.svg'
-    ],
-    code: 'https://github.com/krishnavitap/Eventify',
-    live: null,
-    accent: 'from-cyan-500 to-emerald-500'
+    accent: 'from-emerald-500 to-teal-500'
   }
 ]
 

@@ -140,7 +140,7 @@ export default function SearchBar() {
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') go(e.shiftKey ? -1 : 1)
                   }}
-                  placeholder="Search page… (Django, AWS, Eventify…)"
+                  placeholder="Search page… (Django, AWS, RAG…)"
                   className="flex-1 bg-transparent outline-none py-2 text-base"
                 />
                 {term && (

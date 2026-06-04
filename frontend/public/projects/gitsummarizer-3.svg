@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  <rect x="40" y="40" width="720" height="420" rx="14" fill="#161628" stroke="#2a2a44"/>
+  <rect x="40" y="40" width="720" height="36" rx="14" fill="#1f1f33"/>
+  <circle cx="62" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="82" cy="58" r="6" fill="#febc2e"/>
+  <circle cx="102" cy="58" r="6" fill="#28c840"/>
+  <text x="400" y="62" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b8b9a">rag/chain.py</text>
+  <g font-family="monospace" font-size="13">
+    <text x="60" y="110" fill="#8b8b9a">1</text>
+    <text x="90" y="110" fill="#ec4899">from</text>
+    <text x="140" y="110" fill="#e5e5ef">langchain.chains</text>
+    <text x="290" y="110" fill="#ec4899">import</text>
+    <text x="350" y="110" fill="#06b6d4">RetrievalQA</text>
+    <text x="60" y="140" fill="#8b8b9a">2</text>
+    <text x="60" y="170" fill="#8b8b9a">3</text>
+    <text x="90" y="170" fill="#e5e5ef">retriever = store.as_retriever(</text>
+    <text x="60" y="200" fill="#8b8b9a">4</text>
+    <text x="120" y="200" fill="#e5e5ef">search_kwargs={</text>
+    <text x="245" y="200" fill="#a5d6a7">"k"</text>
+    <text x="265" y="200" fill="#e5e5ef">: </text>
+    <text x="278" y="200" fill="#febc2e">5</text>
+    <text x="288" y="200" fill="#e5e5ef">})</text>
+    <text x="60" y="230" fill="#8b8b9a">5</text>
+    <text x="60" y="260" fill="#8b8b9a">6</text>
+    <text x="90" y="260" fill="#e5e5ef">qa = RetrievalQA.from_chain_type(</text>
+    <text x="60" y="290" fill="#8b8b9a">7</text>
+    <text x="120" y="290" fill="#e5e5ef">llm=llm, retriever=retriever)</text>
+    <text x="60" y="320" fill="#8b8b9a">8</text>
+    <text x="60" y="350" fill="#8b8b9a">9</text>
+    <text x="90" y="350" fill="#e5e5ef">answer = qa.invoke(question)</text>
+    <text x="60" y="410" fill="#8b8b9a"># &lt; 5s per question · 1,000+ chunks</text>
+  </g>
+</svg>

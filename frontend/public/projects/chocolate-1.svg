@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="ch-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="ch-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ch-bg)"/>
+  <rect x="40" y="40" width="720" height="420" rx="18" fill="url(#ch-card)" opacity="0.95"/>
+  <rect x="60" y="60" width="280" height="14" rx="7" fill="#f59e0b"/>
+  <rect x="60" y="86" width="340" height="10" rx="5" fill="#8b8b9a" opacity="0.7"/>
+  <!-- KPI cards -->
+  <g font-family="sans-serif">
+    <rect x="60" y="120" width="200" height="80" rx="12" fill="#161628" stroke="#2a2a44"/>
+    <text x="76" y="148" font-size="11" font-family="monospace" fill="#8b8b9a">TOTAL SALES</text>
+    <text x="76" y="182" font-size="24" font-weight="700" fill="#f59e0b">$4.2M</text>
+
+    <rect x="290" y="120" width="200" height="80" rx="12" fill="#161628" stroke="#2a2a44"/>
+    <text x="306" y="148" font-size="11" font-family="monospace" fill="#8b8b9a">TOP MARKET</text>
+    <text x="306" y="182" font-size="24" font-weight="700" fill="#f97316">USA</text>
+
+    <rect x="520" y="120" width="200" height="80" rx="12" fill="#161628" stroke="#2a2a44"/>
+    <text x="536" y="148" font-size="11" font-family="monospace" fill="#8b8b9a">ROWS CLEANED</text>
+    <text x="536" y="182" font-size="24" font-weight="700" fill="#facc15">1,000+</text>
+  </g>
+  <!-- donut + bars -->
+  <g>
+    <circle cx="150" cy="320" r="70" fill="none" stroke="#2a2a44" stroke-width="22"/>
+    <circle cx="150" cy="320" r="70" fill="none" stroke="#f59e0b" stroke-width="22" stroke-dasharray="220 440" transform="rotate(-90 150 320)"/>
+    <circle cx="150" cy="320" r="70" fill="none" stroke="#f97316" stroke-width="22" stroke-dasharray="120 440" stroke-dashoffset="-220" transform="rotate(-90 150 320)"/>
+    <text x="150" y="326" text-anchor="middle" font-family="monospace" font-size="13" fill="#e5e5ef">markets</text>
+  </g>
+  <g>
+    <rect x="320" y="350" width="36" height="60" fill="#f59e0b" rx="3"/>
+    <rect x="370" y="320" width="36" height="90" fill="#f97316" rx="3"/>
+    <rect x="420" y="290" width="36" height="120" fill="#f59e0b" rx="3"/>
+    <rect x="470" y="260" width="36" height="150" fill="#f97316" rx="3"/>
+    <rect x="520" y="300" width="36" height="110" fill="#f59e0b" rx="3"/>
+    <rect x="570" y="270" width="36" height="140" fill="#f97316" rx="3"/>
+    <rect x="620" y="240" width="36" height="170" fill="#facc15" rx="3"/>
+    <line x1="310" y1="410" x2="680" y2="410" stroke="#2a2a44" stroke-width="2"/>
+  </g>
+  <text x="740" y="440" text-anchor="end" font-family="monospace" font-size="12" fill="#f59e0b" opacity="0.7">Chocolate Exports · Power BI</text>
+</svg>
