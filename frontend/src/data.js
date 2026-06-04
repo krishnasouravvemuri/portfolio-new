@@ -16,10 +16,9 @@ export const PROFILE = {
 }
 
 export const SKILLS = {
-  Languages: ['Python', 'Java', 'SQL'],
-  'Frameworks / Libraries': ['Django', 'DRF', 'PyTorch', 'Scikit-learn', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn'],
-  'Cloud / DevOps': ['AWS', 'Docker', 'Kubernetes'],
-  Tools: ['Git', 'GitHub', 'Postman', 'MySQL']
+  'Languages & Databases': ['Python', 'Java', 'SQL', 'MySQL', 'SQLite', 'Supabase'],
+  'Backend, Web & Cloud': ['Django', 'DRF', 'React', 'REST APIs', 'JWT Auth', 'Docker', 'Kubernetes', 'AWS', 'Git', 'GitHub', 'Postman'],
+  'AI, ML & Data': ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LangChain', 'Librosa', 'NumPy', 'Pandas', 'RAG', 'LLMs', 'Vector Databases', 'Deep Learning', 'Power BI']
 }
 
 // floating skill icons (devicon CDN)
@@ -41,6 +40,10 @@ export const SKILL_ICONS = [
   { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', color: '#FCC624' },
   { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg', color: '#CC2927' },
   { name: 'LangChain', icon: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4', color: '#1C3C3C' },
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', color: '#61DAFB' },
+  { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', color: '#FF6F00' },
+  { name: 'SQLite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', color: '#003B57' },
+  { name: 'Supabase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg', color: '#3FCF8E' },
   { name: 'RAG', icon: '', color: '#06b6d4', emoji: '🔎' }
 ]
 
