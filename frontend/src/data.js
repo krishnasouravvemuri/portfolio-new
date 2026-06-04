@@ -16,7 +16,7 @@ export const PROFILE = {
 }
 
 export const SKILLS = {
-  'Languages & Databases': ['Python', 'Java', 'SQL', 'MySQL', 'SQLite', 'Supabase'],
+  'Languages & Databases': ['Python', 'Java', 'SQL', 'MySQL', 'Postgres', 'Supabase'],
   'Backend, Web & Cloud': ['Django', 'DRF', 'React', 'REST APIs', 'JWT Auth', 'Docker', 'Kubernetes', 'AWS', 'Git', 'GitHub', 'Postman'],
   'AI, ML & Data': ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LangChain', 'Librosa', 'NumPy', 'Pandas', 'RAG', 'LLMs', 'Vector Databases', 'Deep Learning', 'Power BI']
 }
@@ -42,7 +42,7 @@ export const SKILL_ICONS = [
   { name: 'LangChain', icon: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4', color: '#1C3C3C' },
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', color: '#61DAFB' },
   { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', color: '#FF6F00' },
-  { name: 'SQLite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', color: '#003B57' },
+  { name: 'Postgres', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', color: '#4169E1' },
   { name: 'Supabase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg', color: '#3FCF8E' },
   { name: 'RAG', icon: '', color: '#06b6d4', emoji: '🔎' }
 ]
