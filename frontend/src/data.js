@@ -17,8 +17,8 @@ export const PROFILE = {
 
 export const SKILLS = {
   'Languages & Databases': ['Python', 'Java', 'SQL', 'MySQL', 'Postgres', 'Supabase'],
-  'Backend, Web & Cloud': ['Django', 'DRF', 'React', 'REST APIs', 'JWT Auth', 'Docker', 'Kubernetes', 'AWS', 'Git', 'GitHub', 'Postman'],
-  'AI, ML & Data': ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LangChain', 'Librosa', 'NumPy', 'Pandas', 'RAG', 'LLMs', 'Vector Databases', 'Deep Learning', 'Power BI']
+  'Backend, Web & Cloud': ['Django', 'DRF', 'React', 'REST APIs', 'JWT Auth', 'Docker', 'Kubernetes', 'AWS', 'Git', 'GitHub'],
+  'AI, ML & Data': ['TensorFlow', 'Keras', 'Scikit-learn', 'LangChain', 'Librosa', 'NumPy', 'Pandas', 'RAG', 'LLMs', 'Vector Databases', 'Deep Learning', 'Power BI']
 }
 
 // floating skill icons (devicon CDN)
@@ -26,7 +26,6 @@ export const SKILL_ICONS = [
   { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', color: '#3776AB' },
   { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', color: '#E76F00' },
   { name: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg', color: '#0C4B33' },
-  { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', color: '#EE4C2C' },
   { name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', color: '#013243' },
   { name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', color: '#150458' },
   { name: 'scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', color: '#F7931E' },
@@ -36,12 +35,12 @@ export const SKILL_ICONS = [
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', color: '#00618A' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', color: '#F05032' },
   { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', color: '#ffffff', invert: true },
-  { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg', color: '#FF6C37' },
   { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', color: '#FCC624' },
   { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg', color: '#CC2927' },
   { name: 'LangChain', icon: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4', color: '#1C3C3C' },
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', color: '#61DAFB' },
   { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', color: '#FF6F00' },
+  { name: 'Keras', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg', color: '#D00000' },
   { name: 'Postgres', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', color: '#4169E1' },
   { name: 'Supabase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg', color: '#3FCF8E' },
   { name: 'RAG', icon: '', color: '#06b6d4', emoji: '🔎' }
