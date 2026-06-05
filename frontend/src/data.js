@@ -2,6 +2,7 @@ export const RESUME_URL = 'https://drive.google.com/file/d/11MdKUfwEqXbwGnLdU9z0
 export const LINKEDIN_URL = 'https://linkedin.com/in/sri-venkata-krishna-sourav-v'
 export const GITHUB_URL = 'https://github.com/krishnasouravvemuri'
 export const PAPERREPO_URL = 'https://github.com/krishnasouravvemuri/PaperRepo'
+export const GITREPO_URL = 'https://github.com/krishnasouravvemuri/git_repo_rag'
 export const EMAILS = ['krishnavitap@gmail.com', 'sourav230505@gmail.com']
 export const PHONE = '+91 9063183455'
 export const LOCATION = 'Vijayawada, India'
@@ -112,7 +113,7 @@ export const PROJECTS = [
       '/projects/gitsummarizer-2.svg',
       '/projects/gitsummarizer-3.svg'
     ],
-    code: 'https://github.com/krishnasouravvemuri',
+    code: GITREPO_URL,
     live: null,
     accent: 'from-violet-500 to-fuchsia-500'
   },
@@ -172,7 +173,7 @@ export const PROJECTS = [
       '/projects/paperrepo-2.svg',
       '/projects/paperrepo-3.svg'
     ],
-    code: 'https://github.com/krishnasouravvemuri/PaperRepo',
+    code: PAPERREPO_URL,
     live: null,
     accent: 'from-emerald-500 to-teal-500'
   }
