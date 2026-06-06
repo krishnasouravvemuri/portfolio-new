@@ -2,6 +2,8 @@ export const RESUME_URL = 'https://drive.google.com/file/d/11MdKUfwEqXbwGnLdU9z0
 export const LINKEDIN_URL = 'https://linkedin.com/in/sri-venkata-krishna-sourav-v'
 export const GITHUB_URL = 'https://github.com/krishnasouravvemuri'
 export const PAPERREPO_URL = 'https://github.com/krishnasouravvemuri/PaperRepo'
+export const SPEECH_EMOTION_RECOGNITION_URL = 'https://github.com/krishnasouravvemuri/speech-emotion-recognition.git'
+export const CHOCOLATE_DATA_ANALYSIS_URL = 'https://github.com/krishnasouravvemuri/chocolate-export-analysis.git'
 export const GITREPO_URL = 'https://github.com/krishnasouravvemuri/git_repo_rag'
 export const EMAILS = ['krishnavitap@gmail.com', 'sourav230505@gmail.com']
 export const PHONE = '+91 9063183455'
@@ -133,7 +135,7 @@ export const PROJECTS = [
       '/projects/ser-2.svg',
       '/projects/ser-3.svg'
     ],
-    code: 'https://github.com/krishnasouravvemuri',
+    code: SPEECH_EMOTION_RECOGNITION_URL,
     live: null,
     accent: 'from-cyan-500 to-emerald-500'
   },
@@ -153,7 +155,7 @@ export const PROJECTS = [
       '/projects/chocolate-2.svg',
       '/projects/chocolate-3.svg'
     ],
-    code: 'https://github.com/krishnasouravvemuri',
+    code: CHOCOLATE_DATA_ANALYSIS_URL,
     live: null,
     accent: 'from-amber-500 to-orange-500'
   },
